@@ -29,20 +29,52 @@
      
    <!-- Global Style -->
    <style>
+    body {
+      height: 100% !important;
+      margin: 0 auto !important;
+      padding: 0 !important;
+      width: 100% !important;
+      -webkit-text-size-adjust: 100%;
+      -ms-text-size-adjust: 100%;
+        word-spacing: normal;
+    }
+
     table, td, div, h1, p {font-family: 'Open Sans', Roboto, Helvetica, Arial, sans-serif;}
+
+   table, td {
+      border-collapse: collapse !important;
+      mso-table-lspace: 0pt;
+      mso-table-rspace: 0pt;
+      -webkit-text-size-adjust: 100%;
+      -ms-text-size-adjust: 100%;
+    }
+
+    img {
+      display: inline-block;
+    }
 
       /* Desktop */
     @media only screen and (min-width: 960px) {
       }
 
        /* Mid Size */
-     @media only screen and (max-width: 960px) {
+     @media only screen and (min-width: 960px) {
+        .content-row {
+            padding-left: 15px !important;
+            padding-right: 15px !important;
+        }
       }
 
         /* Mobile */
     @media only screen and (max-width: 600px){
         .container{
             width: 100%;
+        }
+        .hero-content {
+            padding: 0 15px 0 15px !important;
+        }
+        .empty-spacer.vertical {
+            display: none !important;
         }
     }
 
@@ -78,7 +110,7 @@
                                     <td align="center" style="padding: 0; ">
                                         <table role="presentation" border="0" border-spacing="0" cellpadding="0" cellspacing="0" style="margin: 0 auto; width: 100%; max-width: 470px; border-collapse: collapse; margin: 0 0 20px 0;">
                                             <tr>
-                                                <td align="center" style="padding: 0;">
+                                                <td class="hero-content" align="center" style="padding: 0;">
                                                     <p class="sub-head" style="font-size: 15px; line-height: 21px; color: #3C4043; font-weight: 600; margin: 20px 0 10px 0">Pixel Buds Pro</p>
                                                     <h1 class="headline h1" style="font-size: 40px; font-weight: 700;line-height: 52px; color: #3C4043; margin: 0 0 15px 0;">
                                                          Now playing: <br>
@@ -135,11 +167,11 @@
                                 </tr>
                                 <!-- Start of Content First Row -->
                                 <tr>
-                                    <td class="" align="center" style="padding: 0;" valign="top">
-                                        <table role="presentation" width="100%" height="100%" border="0" border-spacing="0" cellpadding="0" cellspacing="0" style="border-collapse: collapse; background-color: #E7EEF3; margin: 0 auto; text-align: center; border-radius: 12px; overflow: hidden;">
+                                    <td align="center" style="padding: 0;" valign="top">
+                                        <table class="table-container" role="presentation" width="100%" height="100%" border="0" border-spacing="0" cellpadding="0" cellspacing="0" style="border-collapse: collapse; background-color: #E7EEF3; margin: 0 auto; text-align: center; border-radius: 12px; overflow: hidden;">
                                            <tr>
-                                                <td class="two-columns top">
-                                                    <table class="column left" role="presentation" width="50%" height="100%" border="0" border-spacing="0" cellpadding="0" cellspacing="0" style="border-collapse: collapse" align="left">
+                                                <td class="two-columns">
+                                                    <table class="table-container__left bottom" role="presentation" width="50%" height="100%" border="0" border-spacing="0" cellpadding="0" cellspacing="0" style="border-collapse: collapse" align="left">
                                                         <tr>
                                                             <td class="padding" valign="top">
                                                                 <table class="content" role="presentation" width="100%" height="100%" border="0" border-spacing="0" cellpadding="0" cellspacing="0" style="border-collapse: collapse">
@@ -163,7 +195,7 @@
                                                         </tr>
                                                     </table>
 
-                                                    <table class="column right" role="presentation" width="50%" border="0" border-spacing="0" cellpadding="0" cellspacing="0" style="border-collapse: collapse" align="left">
+                                                    <table class="table-container__right top" role="presentation" width="50%" border="0" border-spacing="0" cellpadding="0" cellspacing="0" style="border-collapse: collapse" align="left">
                                                         <tr>
                                                             <td class="padding">
                                                                 <table class="content" role="presentation" width="100%" border="0" border-spacing="0" cellpadding="0" cellspacing="0" style="border-collapse: collapse">
@@ -211,12 +243,12 @@
                                                         <tr>
                                                             <td class="image" align="left" style="padding: 0; width: 100%; font-size: 0;" valign="top">
                                                                 <img src="img/Hands-Free.png" alt="Picture of a man wearing Buds Pro while taking photos" style="border: none;
-                                                                outline: none; display: block; width: 100%; max-width: 276px; height: auto; font-size: 0;" width="276">
+                                                                outline: none; display: block; width: 100%; min-width: 276px; height: auto; font-size: 0;" width="276">
                                                             </td>
                                                         </tr>
                                                         <!-- Content -->
                                                         <tr>
-                                                            <td style="padding: 24px 15px 28px 15px;" valign="top">
+                                                            <td class="content-row" style="padding: 24px 15px 28px 15px;" valign="top">
                                                                 <table role="presentation" width="100%" height="100%" border="0" border-spacing="0" cellpadding="0" cellspacing="0" style="border-collapse: collapse">
                                                                     <tr>
                                                                         <td align="left" style="padding: 0;">
@@ -245,7 +277,7 @@
                                                 </td>
 
                                                 <!-- Spacer -->
-                                                <td style=" padding: 0; width: 16px; font-size: 0; line-height: 0;" width="16">
+                                                <td class="empty-spacer vertical" style=" padding: 0; width: 16px; font-size: 0; line-height: 0;" width="16">
                                                     &nbsp;
                                                 </td>
                                                 <!-- /Spacer -->
@@ -256,12 +288,12 @@
                                                          <tr>
                                                              <td class="image" align="left" style="padding: 0; width: 100%; font-size: 0;" valign="top">
                                                                  <img src="img/Made-For-You.png" alt="Picture of a woman wearing Buds Pro while working out" style="border: none;
-                                                                 outline: none; display: block; width: 100%; max-width: 276px; height: auto; font-size: 0;" width="276">
+                                                                 outline: none; display: block; width: 100%; min-width: 276px; height: auto; font-size: 0;" width="276">
                                                              </td>
                                                          </tr>
                                                          <!-- Content -->
                                                          <tr>
-                                                             <td style="padding: 24px 15px 28px 15px;" valign="top">
+                                                             <td class="content-row" style="padding: 24px 15px 28px 15px;" valign="top">
                                                                 <table role="presentation" width="100%" height="100%" border="0" border-spacing="0" cellpadding="0" cellspacing="0" style="border-collapse: collapse">
                                                                     <tr>
                                                                         <td align="left" style="padding: 0;">
