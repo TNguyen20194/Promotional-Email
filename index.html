@@ -73,37 +73,50 @@
         .hero-content {
             padding: 0 15px 0 15px !important;
         }
-        .table-container__left{
+        .tune-in-table.left{
             height: auto !important;
             width: 100% !important;
         }
-        .table-container__right{
+        .tune-in-table.right{
             height: auto !important;
             width: 100% !important;
         }
-        .right-column {
-            width: 100% !important;
-        }
-        .right-column img {
-            max-width: 100% !important;
-        }
-        .table-content.top {
+        .tune-in-table__content.top {
             display: table-header-group !important;
         }
-        .table-content.bottom {
+        .tune-in-table__content.bottom {
             display: table-footer-group !important;
         }
-        .column.left {
+        .content__image {
+            width: 100% !important;
+        }
+        .content__image img {
+            max-width: 100% !important;
+        }
+        .content__info {
+            padding-right: 25px !important;
+            padding-left: 25px !important;
+        }
+        .buds-pro__handsfree {
             display: table-header-group !important;    
         }
-        .column.right {
+        .buds-pro__made-for-you {
             display: table-footer-group !important;
         }
-        .column.left table {
+        .buds-pro__handsfree-container {
             margin-bottom: 15px;
         }
+        .content-row {
+            padding-right: 25px !important;
+            padding-left: 25px !important;
+        }
+        .content-row__info {
+            text-align: center;
+        }
         .image img {
-            max-width: 100% !important;
+            max-width: 600px !important;
+            width: 100% !important;
+            height: auto !important;
         }
         .empty-spacer.vertical {
             display: none !important;
@@ -178,7 +191,7 @@
                                         <!-- /Spacer -->
                                         <tr>
                                             <td align="center" style="padding: 0; width: 100%; font-size: 0;">
-                                                <img src="img/Hero-Pixel-Pro.png" alt="Image of Buds Pro" style="display: block;width: 100%; max-width: 600px;" width="600">
+                                                <img src="img/Hero-Pixel-Pro.png" alt="Image of Buds Pro" style="display: block;width: 100%; max-width: 600px; height: auto;" width="600">
                                             </td>
                                         </tr>
                                     </td>
@@ -200,15 +213,15 @@
                                 <!-- Start of Content First Row -->
                                 <tr>
                                     <td align="center" style="padding: 0;" valign="top">
-                                        <table class="table-container" role="presentation" width="100%" height="100%" border="0" border-spacing="0" cellpadding="0" cellspacing="0" style="border-collapse: collapse; background-color: #E7EEF3; margin: 0 auto; text-align: center; border-radius: 12px; overflow: hidden;">
+                                        <table class="tune-in-table" role="presentation" width="100%" height="100%" border="0" border-spacing="0" cellpadding="0" cellspacing="0" style="border-collapse: collapse; background-color: #E7EEF3; margin: 0 auto; text-align: center; border-radius: 12px; overflow: hidden;">
                                            <tr>
                                                 <td class="two-columns">
-                                                    <table class="table-container__right top" role="presentation" width="50%" border="0" border-spacing="0" cellpadding="0" cellspacing="0" style="border-collapse: collapse" align="right">
+                                                    <table class="tune-in-table right top" role="presentation" width="50%" border="0" border-spacing="0" cellpadding="0" cellspacing="0" style="border-collapse: collapse" align="right">
                                                         <tr>
-                                                            <td class="table-content top">
+                                                            <td class="tune-in-table__content top">
                                                                 <table class="content" role="presentation" width="100%" border="0" border-spacing="0" cellpadding="0" cellspacing="0" style="border-collapse: collapse">
                                                                     <tr>
-                                                                        <td class="right-column" align="right" style="padding: 0;" width="50%" valign="top">
+                                                                        <td class="content__image" align="right" style="padding: 0;" width="50%" valign="top">
                                                                             <img src="img/Tune-in.png" alt="Picture of person working and wearing Buds Pro" style=" border: none; outline: none; ;display: block; width: 100%; max-width: 350px; font-size: 0;" width="350" height="100%">
                                                                         </td>
                                                                     </tr>
@@ -217,12 +230,12 @@
                                                         </tr>
                                                     </table>
 
-                                                    <table class="table-container__left bottom" role="presentation" width="50%" height="100%" border="0" border-spacing="0" cellpadding="0" cellspacing="0" style="border-collapse: collapse" align="left">
+                                                    <table class="tune-in-table left bottom" role="presentation" width="50%" height="100%" border="0" border-spacing="0" cellpadding="0" cellspacing="0" style="border-collapse: collapse" align="left">
                                                         <tr>
-                                                            <td class="table-content bottom" valign="top">
+                                                            <td class="tune-in-table__content bottom" valign="top">
                                                                 <table class="content" role="presentation" width="100%" height="100%" border="0" border-spacing="0" cellpadding="0" cellspacing="0" style="border-collapse: collapse">
                                                                     <tr>
-                                                                        <td class="left-column" align="left" style="padding: 30px 20px 30px 20px; text-align: center; vertical-align: middle;" width="50%" valign="top">
+                                                                        <td class="content__info" align="left" style="padding: 30px 20px 30px 20px; text-align: center; vertical-align: middle;" width="50%" valign="top">
                                                                             <h3 class="headline h4" style="font-size: 21px; line-height: 30px; color: #3C4043; font-weight: 700; margin: 0 0 9px 0;">
                                                                                 Tune it out or let it in.
                                                                             </h3>
@@ -267,11 +280,11 @@
                                 <!-- Start of Content Second Row -->
                                 <tr>
                                     <td align="center" style="padding: 0;">
-                                        <table class="second-row" role="presentation" width="100%" border="0" border-spacing="0" cellpadding="0" cellspacing="0" style="border-collapse: collapse; margin: 0 auto; text-align: center">
+                                        <table class="buds-pro" role="presentation" width="100%" border="0" border-spacing="0" cellpadding="0" cellspacing="0" style="border-collapse: collapse; margin: 0 auto; text-align: center">
                                             <tr>
                                                 <!-- Start of Left Column -->
-                                                <td class="column left" align="left" style="padding: 0; vertical-align: top; text-align: center; width: 276px;" width="276" valign="top">
-                                                   <table role="presentation" width="100%" height="100%" border="0" border-spacing="0" cellpadding="0" cellspacing="0" style="border-collapse: collapse; text-align: center; border-radius: 12px; overflow: hidden; background-color: #f9e8e3;">
+                                                <td class="buds-pro__handsfree" align="left" style="padding: 0; vertical-align: top; text-align: center; width: 276px;" width="276" valign="top">
+                                                   <table class="buds-pro__handsfree-container" role="presentation" width="100%" height="100%" border="0" border-spacing="0" cellpadding="0" cellspacing="0" style="border-collapse: collapse; text-align: center; border-radius: 12px; overflow: hidden; background-color: #f9e8e3;">
                                                         <tr>
                                                             <td class="image" align="left" style="padding: 0; width: 100%; font-size: 0;" valign="top">
                                                                 <img src="img/Hands-Free.png" alt="Picture of a man wearing Buds Pro while taking photos" style="border: none;
@@ -283,7 +296,7 @@
                                                             <td class="content-row" style="padding: 24px 15px 28px 15px;" valign="top">
                                                                 <table role="presentation" width="100%" height="100%" border="0" border-spacing="0" cellpadding="0" cellspacing="0" style="border-collapse: collapse">
                                                                     <tr>
-                                                                        <td align="left" style="padding: 0;">
+                                                                        <td class="content-row__info" align="left" style="padding: 0;">
                                                                             <h4 style="font-size: 18px; line-height: 30px; color: #3C4043; font-weight: 700; margin: 0 0 10px 0;">
                                                                                 Hands-free help on the go.
                                                                             </h4>
@@ -315,8 +328,8 @@
                                                 <!-- /Spacer -->
 
                                                  <!-- Start of Right Column -->
-                                                 <td class="column right" align="left" style="padding: 0; vertical-align: top; text-align: center; width: 276px;" width="276" valign="top">
-                                                    <table role="presentation" width="100%" height="100%" border="0" border-spacing="0" cellpadding="0" cellspacing="0" style="border-collapse: collapse; text-align: left; border-radius: 12px; overflow: hidden; background-color: #f9fcdf;">
+                                                 <td class="buds-pro__made-for-you" align="left" style="padding: 0; vertical-align: top; text-align: center; width: 276px;" width="276" valign="top">
+                                                    <table class="buds-pro__made-for-you-container" role="presentation" width="100%" height="100%" border="0" border-spacing="0" cellpadding="0" cellspacing="0" style="border-collapse: collapse; text-align: left; border-radius: 12px; overflow: hidden; background-color: #f9fcdf;">
                                                          <tr>
                                                              <td class="image" align="left" style="padding: 0; width: 100%; font-size: 0;" valign="top">
                                                                  <img src="img/Made-For-You.png" alt="Picture of a woman wearing Buds Pro while working out" style="border: none;
@@ -328,7 +341,7 @@
                                                              <td class="content-row" style="padding: 24px 15px 28px 15px;" valign="top">
                                                                 <table role="presentation" width="100%" height="100%" border="0" border-spacing="0" cellpadding="0" cellspacing="0" style="border-collapse: collapse">
                                                                     <tr>
-                                                                        <td align="left" style="padding: 0;">
+                                                                        <td class="content-row__info" align="left" style="padding: 0;">
                                                                             <h4 style="font-size: 18px; line-height: 30px; color: #3C4043; font-weight: 700; margin: 0 0 10px 0;">
                                                                                 A fit made for you.
                                                                             </h4>
