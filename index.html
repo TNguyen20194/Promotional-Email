@@ -1,10 +1,15 @@
-<!DOCTYPE html>
+<!DOCTYPE htmlPUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
 <html lang="en" xmlns="https://www.w3.org/1999/xhtml" xmlns:o="urn:schemas-microsoft-com:office:office">
 <head>
     <meta charset="UTF-8" />
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=yes" />
+    <meta name="format-detection" content="telephone=no, date=no, address=no, email=no, url=no">
+    <!-- fixes email not full width ios gmail -->
     <meta name="x-apple-disable-message-reformatting" />
+    <!-- control dark mode preferences -->
+    <meta name="color-scheme" content="light dark">
+    <meta name="supported-color-schemes" content="light dark">
     <title>Pixel Buds Pro</title>
     <!--[if mso]>
       <noscript>
@@ -16,6 +21,13 @@
       </noscript>
     <![endif]-->
 
+    <style>
+        :root {
+          color-scheme: light dark;
+          supported-color-schemes: light dark;
+        }
+    </style>
+    
     <!-- Favicon -->
     <link
     rel="icon"
@@ -51,6 +63,12 @@
 
     img {
       display: inline-block;
+      border: 0;
+      height: auto;
+      line-height: 100%;
+      outline: none;
+      text-decoration: none;
+      font-size: 13;
     }
 
        /* Mid Size */
